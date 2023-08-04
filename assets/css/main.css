@@ -183,7 +183,7 @@ html {
 body {
   background: #ffffff;
   height: 100%;
-  min-width: 320px;
+  /* min-width: 320px; */
 }
 
 body.is-preload *,
@@ -2418,15 +2418,15 @@ body.is-touch .main {
   justify-content: space-between;
   background-color: white;
   color: black;
-  padding: 100px;
+  padding: 5%px;
 
   border-radius: 10px;
-  margin-bottom: 20px; /* add space below the box */
-  font-size: 16px; /* make text and icons bigger */
+  margin-bottom: 2%; /* add space below the box */
+  font-size: medium; /* make text and icons bigger */
 }
 
 .contact-box h2 {
-  margin-bottom: 150px;
+  margin-bottom: 10%;
 }
 
 .contact-info {
@@ -2522,13 +2522,13 @@ ul.custom-bullet-list {
 }
 
 #intro .content h2 {
-  font-size: 50px;
+  font-size: medium;
   padding: 5%;
 }
 
 .profilepicture {
-  height: 300px;
-  width: 330px;
+  height: 40%;
+  width: 44%;
 }
 #intro {
   display: flex;
@@ -2549,13 +2549,15 @@ ul.custom-bullet-list {
 .intro-desc {
   margin-left: 15%;
   width: 70%;
-  font-size: 20px;
+  font-size: medium;
+  height: auto;
   align-items: center;
 }
 
 .skill-main {
   width: 50%;
   margin-right: 5%;
+  height: auto;
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -2588,4 +2590,108 @@ ul.custom-bullet-list {
   /* margin: left; */
   text-align: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .main.style2.right.dark.fullscreen,
+  .intro-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-desc {
+    margin-left: 3%;
+    width: 94%;
+    font-size: xx-small;
+    /* height: auto; */
+    align-items: center;
+  }
+  .skill-main {
+    width: 90%;
+  }
+  #one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .skill-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .padding {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-list {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .part1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .part2 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: right;
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-indicators li {
+    width: 2%; /* 2% of screen width */
+    height: 2%; /* 2% of screen height */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%; /* 15% of screen width */
+  }
+
+  .carousel-item {
+    height: 30vh; /* 50% of viewport height */
+    padding: 5%; /* 5% of screen width */
+  }
+
+  .carousel-item img {
+    width: 100%; /* 100% of parent width */
+    height: auto; /* maintain aspect ratio */
+    object-fit: cover; /* cover the parent */
+  }
+  #work{
+    font-size: small;
+  }
 }
